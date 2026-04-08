@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+}   
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 65px;
+    background-color: white;
+}
+
+header h2{
+    color: rgb(114, 0, 221);
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.5s ease-in-out;
+    font-size: 18px;
+}
+
+
+
+li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 7%;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+.cards{
+    background: linear-gradient(to right, rgb(183 183 183), rgb(35 16 56));
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    width: 250px;
+    gap: 15px;
+    border: 1px solid rgb(214, 208, 208);
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
+    box-shadow: 5px 5px 5px 2px gray;
+    /* box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+}
+
+.card .card-div{
+    height: 200px;
+}
+
+.card-div img{
+    height: 100%;
+    width: 100%;
+}
+
+.card p{
+    text-align: center;
+}
+
+
+
+.price{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    align-items: center;
+    gap: 10px;
+    color: rgb(0 0 0)
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+}
+
+footer a{
+    color: rgb(0, 0, 0);
+    
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 45px 65px;
+
+}
+
+footer li{
+    list-style: none;
+}
+
+.top ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bottom{
+    border-top: 1px solid;
+    margin: 0 65px;
+    padding: 30px 0px;
+}
+
+.bottom p{
+    text-align: center;
+}
+
+
+.top h2{
+    padding-bottom: 20px;
+}
