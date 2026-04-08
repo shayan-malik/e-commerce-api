@@ -5,9 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-}
-    
+img{
+    width: 100%;
+}   
 
 header{
     display: flex;
@@ -56,23 +56,11 @@ li a:hover::after{
     width: 100%;
 }
 
-.banner img{
-    width: 90%;
-    height: 450px;
-}
-
-.banner{
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-
 .cards{
     background: linear-gradient(to right, rgb(183 183 183), rgb(35 16 56));
-    padding: 50px 50px;
+    padding: 50px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -80,16 +68,17 @@ li a:hover::after{
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: space-around ;
+    justify-content: center ;
     align-items: center;
     width: 250px;
     gap: 15px;
     border: 1px solid rgb(214, 208, 208);
-    padding: 15px;
+    padding: 25px;
     border-radius: 15px;
     transition: all 0.4s ease-in-out;
-    box-shadow: 5px 5px 5px 2px gray;
     background-color: white;
+    box-shadow: 5px 5px 5px 2px gray;
+    /* box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2); */
 }
 
 .card:hover{
@@ -97,21 +86,27 @@ li a:hover::after{
 
 }
 
+.card .card-div{
+    height: 200px;
+}
+
+.card-div img{
+    height: 100%;
+    width: 100%;
+}
+
 .card p{
     text-align: center;
 }
 
-.card-div img{
-    width: 150px;
-}
 
 
 .price{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    /* justify-content: end; */
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     color: rgb(0 0 0)
 }
 
@@ -128,7 +123,7 @@ footer a{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 35px 65px;
+    padding: 45px 65px;
 
 }
 
